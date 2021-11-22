@@ -58,9 +58,7 @@ a {
 
 .grayTheme {
   color: #405D64;
-  /** QUESTION - er #EBEBEB ny second istedet for #D0D9DB farve? **/
-  /** PH - background: #EBEBEB **/
-  background: #EBEBEB;
+  background: #D0D9DB;
 }
 
 .cyanTheme {
