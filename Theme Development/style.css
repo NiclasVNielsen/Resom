@@ -1,0 +1,252 @@
+/** Search tags **/
+/** QUESTION - | For Questions        **/
+/** TODO -     | For To Do's          **/
+/** PH -       | For Placeholders     **/
+/** WIP -      | For Work in Progress **/
+/** -------------------------------------------------- **/
+/** Structure **/
+/** * When commenting on a line put it **/
+/**   directly above the line of code  **/
+/** * All class names are in CamelCase **/
+/** -------------------------------------------------- **/
+/** COLORS SCHEMES **/
+/** COLORS SCHEMES **/
+/** -------------------------------------------------- **/
+/** DEFAULT SETTINGS **/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: inherit;
+}
+
+/** DEFAULT SETTINGS **/
+/** -------------------------------------------------- **/
+/** FONTS **/
+p, body {
+  font-size: 22px;
+}
+
+h1 {
+  font-size: 100px;
+}
+
+h2 {
+  font-size: 70px;
+}
+
+h3 {
+  font-size: 42px;
+}
+
+a {
+  font-size: 35px;
+}
+
+/** FONTS **/
+/** -------------------------------------------------- **/
+/** COLOR LAYOUTS **/
+.whiteTheme {
+  color: #405D64;
+  background: #FFFFFF;
+}
+
+.whiteTheme h1, .whiteTheme h2 {
+  color: #96B3BA;
+}
+
+.grayTheme {
+  color: #405D64;
+  /** QUESTION - er #EBEBEB ny second istedet for #D0D9DB farve? **/
+  /** PH - background: #EBEBEB **/
+  background: #EBEBEB;
+}
+
+.cyanTheme {
+  color: #FFFFFF;
+  background: #96B3BA;
+}
+
+/** COLOR LAYOUTS **/
+/** -------------------------------------------------- **/
+/** CALL TO ACTION **/
+.CTA {
+  width: 218px;
+  height: 71px;
+  color: #FFFFFF;
+  background: #405D64;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/** CALL TO ACTION **/
+/** -------------------------------------------------- **/
+/** HEADER **/
+header .container {
+  color: #FFFFFF;
+  width: 746px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  /** Login should be .CTA **/
+}
+
+/** HEADER **/
+/** -------------------------------------------------- **/
+/** PRODUCT BOX **/
+.productBox {
+  padding: 62px  51px 44px 63px;
+}
+
+.productBox > p {
+  font-size: 25px;
+}
+
+.productBox li > p {
+  font-size: 20px;
+}
+
+.productBox .container {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/** PRODUCT BOX **/
+/** -------------------------------------------------- **/
+/** INFO BOX **/
+.infoBox {
+  padding: 29px 0 81px;
+}
+
+/** INFO BOX **/
+/** -------------------------------------------------- **/
+/** CONTAINERS **/
+.container, .containerAlignCenter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.containerAlignCenter {
+  text-align: center;
+}
+
+/** CONTAINERS **/
+/** -------------------------------------------------- **/
+/** COLUMNS **/
+.col1 {
+  width: calc((100% / 12) * 1);
+}
+
+.col2 {
+  width: calc((100% / 12) * 2);
+}
+
+.col3 {
+  width: calc((100% / 12) * 3);
+}
+
+.col4 {
+  width: calc((100% / 12) * 4);
+}
+
+.col5 {
+  width: calc((100% / 12) * 5);
+}
+
+.col6 {
+  width: calc((100% / 12) * 6);
+}
+
+.col7 {
+  width: calc((100% / 12) * 7);
+}
+
+.col8 {
+  width: calc((100% / 12) * 8);
+}
+
+.col9 {
+  width: calc((100% / 12) * 9);
+}
+
+.col10 {
+  width: calc((100% / 12) * 10);
+}
+
+.col11 {
+  width: calc((100% / 12) * 11);
+}
+
+.col12 {
+  width: calc((100% / 12) * 12);
+}
+
+.push1 {
+  margin-right: calc((100% / 12) * 1);
+}
+
+.push2 {
+  margin-right: calc((100% / 12) * 2);
+}
+
+.push3 {
+  margin-right: calc((100% / 12) * 3);
+}
+
+.push4 {
+  margin-right: calc((100% / 12) * 4);
+}
+
+.push5 {
+  margin-right: calc((100% / 12) * 5);
+}
+
+.push6 {
+  margin-right: calc((100% / 12) * 6);
+}
+
+.push7 {
+  margin-right: calc((100% / 12) * 7);
+}
+
+.push8 {
+  margin-right: calc((100% / 12) * 8);
+}
+
+.push9 {
+  margin-right: calc((100% / 12) * 9);
+}
+
+.push10 {
+  margin-right: calc((100% / 12) * 10);
+}
+
+.push11 {
+  margin-right: calc((100% / 12) * 11);
+}
+
+.push12 {
+  margin-right: calc((100% / 12) * 12);
+}
+
+/** COLUMNS **/
+/** -------------------------------------------------- **/
+/** Responsible for this code **/
+/** - Niclas V Nielsen **/
+/** https://www.linkedin.com/in/niclas-nielsen-14a173206/ **/
+/*# sourceMappingURL=style.css.map */
