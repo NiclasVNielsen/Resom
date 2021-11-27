@@ -26,11 +26,22 @@ $accent: #D1B66F
     box-sizing: border-box
     
     color: inherit
+
+img
+    width: 100%
+    height: auto
 /** DEFAULT SETTINGS **/
 /** -------------------------------------------------- **/
 /** FONTS **/
-p, body
+p
     font-size: 22px
+    font-family: noto-sans, sans-serif
+    font-weight: 400
+    font-style: normal
+body
+    font-family: century-gothic,sans-serif
+    font-weight: 700
+    font-style: normal
 h1
     font-size: 100px
 h2
@@ -38,7 +49,10 @@ h2
 h3
     font-size: 42px
 a
-    font-size: 35px
+    font-size: 22px
+.centerTitle
+    h1,h2,h3,h4,h5,h6
+        text-align: center
 /** FONTS **/
 /** -------------------------------------------------- **/
 /** COLOR LAYOUTS **/
@@ -56,12 +70,10 @@ a
 /** COLOR LAYOUTS **/
 /** -------------------------------------------------- **/
 /** CALL TO ACTION **/
-.CTA
-    width: 218px
-    height: 71px
-    
+.CTASmall, .CTABig
     color: $fourth
     background: $third
+    border-radius: 36px
 
     display: flex
     justify-content: center
@@ -69,22 +81,67 @@ a
     &:hover
         
     &:active
+    a
+        text-decoration: none
+        transform: translateY(-5%)
+.CTASmall
+    width: 147px
+    height: 48px
+.CTABig
+    width: 218px
+    height: 71px
         
 /** CALL TO ACTION **/
 /** -------------------------------------------------- **/
 /** HEADER **/
 header
+    padding: 9px 67px
+
+    align-items: center
+
+    position: sticky
+    top: 0
+    left: 0
+    z-index: 100
     .logo
+        width: 167px
+        img
+            display: block
+    nav
+        width: 958px
         
-    .container
-        color: $fourth
-
-        width: 746px
-
-        justify-content: space-between
-        /** Login should be .CTA **/
+        a
+            text-decoration: none
+            display: block
 
 /** HEADER **/
+/** -------------------------------------------------- **/
+/** BANNERS **/
+.banner
+    margin-top: 56px
+    div
+        /** QUESTION - This supposed to break the color scheme? **/
+        background: #F4F4F4
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1)
+
+        width: calc(100% - 37px)
+        aspect-ratio: 311 / 243
+
+        margin: 0 auto
+        position: relative
+
+        &:first-of-type
+            margin-left: 27px
+        &:last-of-type
+            margin-right: 27px
+        
+        img
+            position: absolute
+    h3
+        text-align: center
+
+        margin-top: 35px
+/** BANNERS **/
 /** -------------------------------------------------- **/
 /** PRODUCT BOX **/
 .productBox
@@ -104,18 +161,64 @@ header
     padding: 29px 0 81px
 /** INFO BOX **/
 /** -------------------------------------------------- **/
+/** PLACEHOLDERS **/
+.PH
+    background: #D1D1D1
+    height: 100%
+.imageContainer
+    .PH
+        min-height: 600px
+/** PlACEHOLDERS **/
+/** -------------------------------------------------- **/
 /** CONTAINERS **/
-.container, .containerAlignCenter
+.container, .containerAlignCenter, .containerJustifySpaceAround, .containerJustifySpaceBetween
     display: flex
     flex-wrap: wrap
 .containerAlignCenter
-    text-align: center
+    align-items: center
+.containerJustifySpaceAround
+    justify-content: space-around
+.containerJustifySpaceBetween
+    justify-content: space-between
+
+
+.gutterLeft, .gutterBoth
+    padding-left: .41666%
+.gutterRight, .gutterBoth
+    padding-right: .41666%
+
+.imageContainer
+    min-height: 600px
+
+.wrapper
+    max-width: 1580px
+    margin-left: auto
+    margin-right: auto
+
+.hero
+    min-height: 40em
+    height: 90vh
+    h1
+        margin-bottom: 30px
+    p
+        margin-bottom: 80px
+
 /** CONTAINERS **/
+/** -------------------------------------------------- **/
+/** SPACING **/
+.littleSpace
+    padding-top: 43px
+.mediumSpace
+    padding-top: 86px
+.bigSpace
+    padding-top: 94px
+/** SPACING **/
 /** -------------------------------------------------- **/
 /** COLUMNS **/
 @for $i from 1 through 12
   .col#{$i}
     width: calc((100% / 12) * #{$i})
+    padding: 0 .41666%
 @for $i from 1 through 12
   .push#{$i}
     margin-right: calc((100% / 12) * #{$i})

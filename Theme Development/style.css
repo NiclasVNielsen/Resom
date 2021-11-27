@@ -21,11 +21,25 @@
   color: inherit;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 /** DEFAULT SETTINGS **/
 /** -------------------------------------------------- **/
 /** FONTS **/
-p, body {
+p {
   font-size: 22px;
+  font-family: noto-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: century-gothic,sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 h1 {
@@ -41,7 +55,11 @@ h3 {
 }
 
 a {
-  font-size: 35px;
+  font-size: 22px;
+}
+
+.centerTitle h1, .centerTitle h2, .centerTitle h3, .centerTitle h4, .centerTitle h5, .centerTitle h6 {
+  text-align: center;
 }
 
 /** FONTS **/
@@ -69,11 +87,10 @@ a {
 /** COLOR LAYOUTS **/
 /** -------------------------------------------------- **/
 /** CALL TO ACTION **/
-.CTA {
-  width: 218px;
-  height: 71px;
+.CTASmall, .CTABig {
   color: #FFFFFF;
   background: #405D64;
+  border-radius: 36px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -85,19 +102,90 @@ a {
           align-items: center;
 }
 
+.CTASmall a, .CTABig a {
+  text-decoration: none;
+  -webkit-transform: translateY(-5%);
+          transform: translateY(-5%);
+}
+
+.CTASmall {
+  width: 147px;
+  height: 48px;
+}
+
+.CTABig {
+  width: 218px;
+  height: 71px;
+}
+
 /** CALL TO ACTION **/
 /** -------------------------------------------------- **/
 /** HEADER **/
-header .container {
-  color: #FFFFFF;
-  width: 746px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  /** Login should be .CTA **/
+header {
+  padding: 9px 67px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+header .logo {
+  width: 167px;
+}
+
+header .logo img {
+  display: block;
+}
+
+header nav {
+  width: 958px;
+}
+
+header nav a {
+  text-decoration: none;
+  display: block;
 }
 
 /** HEADER **/
+/** -------------------------------------------------- **/
+/** BANNERS **/
+.banner {
+  margin-top: 56px;
+}
+
+.banner div {
+  /** QUESTION - This supposed to break the color scheme? **/
+  background: #F4F4F4;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  width: calc(100% - 37px);
+  aspect-ratio: 311 / 243;
+  margin: 0 auto;
+  position: relative;
+}
+
+.banner div:first-of-type {
+  margin-left: 27px;
+}
+
+.banner div:last-of-type {
+  margin-right: 27px;
+}
+
+.banner div img {
+  position: absolute;
+}
+
+.banner h3 {
+  text-align: center;
+  margin-top: 35px;
+}
+
+/** BANNERS **/
 /** -------------------------------------------------- **/
 /** PRODUCT BOX **/
 .productBox {
@@ -130,8 +218,20 @@ header .container {
 
 /** INFO BOX **/
 /** -------------------------------------------------- **/
+/** PLACEHOLDERS **/
+.PH {
+  background: #D1D1D1;
+  height: 100%;
+}
+
+.imageContainer .PH {
+  min-height: 600px;
+}
+
+/** PlACEHOLDERS **/
+/** -------------------------------------------------- **/
 /** CONTAINERS **/
-.container, .containerAlignCenter {
+.container, .containerAlignCenter, .containerJustifySpaceAround, .containerJustifySpaceBetween {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -140,58 +240,129 @@ header .container {
 }
 
 .containerAlignCenter {
-  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.containerJustifySpaceAround {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.containerJustifySpaceBetween {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.gutterLeft, .gutterBoth {
+  padding-left: .41666%;
+}
+
+.gutterRight, .gutterBoth {
+  padding-right: .41666%;
+}
+
+.imageContainer {
+  min-height: 600px;
+}
+
+.wrapper {
+  max-width: 1580px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero {
+  min-height: 40em;
+  height: 90vh;
+}
+
+.hero h1 {
+  margin-bottom: 30px;
+}
+
+.hero p {
+  margin-bottom: 80px;
 }
 
 /** CONTAINERS **/
 /** -------------------------------------------------- **/
+/** SPACING **/
+.littleSpace {
+  padding-top: 43px;
+}
+
+.mediumSpace {
+  padding-top: 86px;
+}
+
+.bigSpace {
+  padding-top: 94px;
+}
+
+/** SPACING **/
+/** -------------------------------------------------- **/
 /** COLUMNS **/
 .col1 {
   width: calc((100% / 12) * 1);
+  padding: 0 .41666%;
 }
 
 .col2 {
   width: calc((100% / 12) * 2);
+  padding: 0 .41666%;
 }
 
 .col3 {
   width: calc((100% / 12) * 3);
+  padding: 0 .41666%;
 }
 
 .col4 {
   width: calc((100% / 12) * 4);
+  padding: 0 .41666%;
 }
 
 .col5 {
   width: calc((100% / 12) * 5);
+  padding: 0 .41666%;
 }
 
 .col6 {
   width: calc((100% / 12) * 6);
+  padding: 0 .41666%;
 }
 
 .col7 {
   width: calc((100% / 12) * 7);
+  padding: 0 .41666%;
 }
 
 .col8 {
   width: calc((100% / 12) * 8);
+  padding: 0 .41666%;
 }
 
 .col9 {
   width: calc((100% / 12) * 9);
+  padding: 0 .41666%;
 }
 
 .col10 {
   width: calc((100% / 12) * 10);
+  padding: 0 .41666%;
 }
 
 .col11 {
   width: calc((100% / 12) * 11);
+  padding: 0 .41666%;
 }
 
 .col12 {
   width: calc((100% / 12) * 12);
+  padding: 0 .41666%;
 }
 
 .push1 {
