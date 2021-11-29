@@ -38,7 +38,7 @@
                 </a>
             </div>
             <div class="col5 push1">
-                <!-- IMG -->
+                <img src="./assets/circle.png" alt="Circle of despair">
             </div>
         </div>
     </section>

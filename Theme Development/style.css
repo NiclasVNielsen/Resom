@@ -168,14 +168,6 @@ header nav a {
   position: relative;
 }
 
-.banner div:first-of-type {
-  margin-left: 27px;
-}
-
-.banner div:last-of-type {
-  margin-right: 27px;
-}
-
 .banner div img {
   position: absolute;
 }
