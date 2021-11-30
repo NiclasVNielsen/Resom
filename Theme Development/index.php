@@ -37,7 +37,7 @@
                     Tilmeld
                 </a>
             </div>
-            <div class="col5 push1">
+            <div class="col5 push1 m-disapear">
                 <img src="./assets/circle.png" alt="Circle of despair">
             </div>
         </div>

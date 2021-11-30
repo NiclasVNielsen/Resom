@@ -358,54 +358,153 @@ header nav a {
 }
 
 .push1 {
-  margin-right: calc((100% / 12) * 1);
+  margin-left: calc((100% / 12) * 1);
 }
 
 .push2 {
-  margin-right: calc((100% / 12) * 2);
+  margin-left: calc((100% / 12) * 2);
 }
 
 .push3 {
-  margin-right: calc((100% / 12) * 3);
+  margin-left: calc((100% / 12) * 3);
 }
 
 .push4 {
-  margin-right: calc((100% / 12) * 4);
+  margin-left: calc((100% / 12) * 4);
 }
 
 .push5 {
-  margin-right: calc((100% / 12) * 5);
+  margin-left: calc((100% / 12) * 5);
 }
 
 .push6 {
-  margin-right: calc((100% / 12) * 6);
+  margin-left: calc((100% / 12) * 6);
 }
 
 .push7 {
-  margin-right: calc((100% / 12) * 7);
+  margin-left: calc((100% / 12) * 7);
 }
 
 .push8 {
-  margin-right: calc((100% / 12) * 8);
+  margin-left: calc((100% / 12) * 8);
 }
 
 .push9 {
-  margin-right: calc((100% / 12) * 9);
+  margin-left: calc((100% / 12) * 9);
 }
 
 .push10 {
-  margin-right: calc((100% / 12) * 10);
+  margin-left: calc((100% / 12) * 10);
 }
 
 .push11 {
-  margin-right: calc((100% / 12) * 11);
+  margin-left: calc((100% / 12) * 11);
 }
 
 .push12 {
-  margin-right: calc((100% / 12) * 12);
+  margin-left: calc((100% / 12) * 12);
+}
+
+@media screen and (max-width: 834px) {
+  .m-col1 {
+    width: calc((100% / 8) * 1);
+    padding: 0 .41666%;
+  }
+  .m-col2 {
+    width: calc((100% / 8) * 2);
+    padding: 0 .41666%;
+  }
+  .m-col3 {
+    width: calc((100% / 8) * 3);
+    padding: 0 .41666%;
+  }
+  .m-col4 {
+    width: calc((100% / 8) * 4);
+    padding: 0 .41666%;
+  }
+  .m-col5 {
+    width: calc((100% / 8) * 5);
+    padding: 0 .41666%;
+  }
+  .m-col6 {
+    width: calc((100% / 8) * 6);
+    padding: 0 .41666%;
+  }
+  .m-col7 {
+    width: calc((100% / 8) * 7);
+    padding: 0 .41666%;
+  }
+  .m-col8 {
+    width: calc((100% / 8) * 8);
+    padding: 0 .41666%;
+  }
+  .m-push1 {
+    margin-left: calc((100% / 8) * 1);
+  }
+  .m-push2 {
+    margin-left: calc((100% / 8) * 2);
+  }
+  .m-push3 {
+    margin-left: calc((100% / 8) * 3);
+  }
+  .m-push4 {
+    margin-left: calc((100% / 8) * 4);
+  }
+  .m-push5 {
+    margin-left: calc((100% / 8) * 5);
+  }
+  .m-push6 {
+    margin-left: calc((100% / 8) * 6);
+  }
+  .m-push7 {
+    margin-left: calc((100% / 8) * 7);
+  }
+  .m-push8 {
+    margin-left: calc((100% / 8) * 8);
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .s-col1 {
+    width: calc((100% / 4) * 1);
+    padding: 0 .41666%;
+  }
+  .s-col2 {
+    width: calc((100% / 4) * 2);
+    padding: 0 .41666%;
+  }
+  .s-col3 {
+    width: calc((100% / 4) * 3);
+    padding: 0 .41666%;
+  }
+  .s-col4 {
+    width: calc((100% / 4) * 4);
+    padding: 0 .41666%;
+  }
+  .s-push1 {
+    margin-left: calc((100% / 4) * 1);
+  }
+  .s-push2 {
+    margin-left: calc((100% / 4) * 2);
+  }
+  .s-push3 {
+    margin-left: calc((100% / 4) * 3);
+  }
+  .s-push4 {
+    margin-left: calc((100% / 4) * 4);
+  }
 }
 
 /** COLUMNS **/
+/** -------------------------------------------------- **/
+/** SCALING **/
+@media screen and (max-width: 834px) {
+  .m-disapear {
+    display: none;
+  }
+}
+
+/** SCALING **/
 /** -------------------------------------------------- **/
 /** Responsible for this code **/
 /** - Niclas V Nielsen **/

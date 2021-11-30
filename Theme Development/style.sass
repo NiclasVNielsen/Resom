@@ -214,8 +214,35 @@ header
     padding: 0 .41666%
 @for $i from 1 through 12
   .push#{$i}
-    margin-right: calc((100% / 12) * #{$i})
+    margin-left: calc((100% / 12) * #{$i})
+
+@media screen and (max-width: 834px)
+    @for $i from 1 through 8
+        .m-col#{$i}
+            width: calc((100% / 8) * #{$i})
+            padding: 0 .41666%
+    @for $i from 1 through 8
+        .m-push#{$i}
+            margin-left: calc((100% / 8) * #{$i})    
+
+
+@media screen and (max-width: 375px)
+    @for $i from 1 through 4
+        .s-col#{$i}
+            width: calc((100% / 4) * #{$i})
+            padding: 0 .41666%
+    @for $i from 1 through 4
+        .s-push#{$i}
+            margin-left: calc((100% / 4) * #{$i})   
+
 /** COLUMNS **/
+/** -------------------------------------------------- **/
+/** SCALING **/
+
+@media screen and (max-width: 834px)
+    .m-disapear
+        display: none
+/** SCALING **/
 /** -------------------------------------------------- **/
 /** Responsible for this code **/
 /** - Niclas V Nielsen **/
