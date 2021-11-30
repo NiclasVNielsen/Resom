@@ -23,7 +23,34 @@
         <div class="login CTASmall m-disapear">
             <a href="">Login</a>
         </div>
+        <div class="burger disapear m-appear">
+            <img src="./assets/menu.png" alt="Menu">
+        </div>
     </header>
+    <aside class="sideNav cyanTheme">
+        <div class="sideNavHeader">
+            <div class="burger">
+                <img src="./assets/menu.png" alt="Menu">
+            </div>
+        </div>
+        <nav class="gutterBoth">
+            <p>
+                <a href="">Nav 1</a>
+            </p>
+            <p>
+                <a href="">Nav 2</a>
+            </p>
+            <p>
+                <a href="">Nav 3</a>
+            </p>
+            <p>
+                <a href="">Nav 4</a>
+            </p>
+            <p>
+                <a href="">Nav 5</a>
+            </p>
+        </nav>
+    </aside>
     <section class="cyanTheme s-whiteTheme m-gutterBoth">
         <div class="wrapper containerAlignCenter hero m-heightAuto s-flexReverse">
             <div class="col6 m-col8">
@@ -104,5 +131,7 @@
             </p>
         </div>
     </section>
+    <script src="sideNav.js">
+    </script>
 </body>
 </html>

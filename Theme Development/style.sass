@@ -284,9 +284,14 @@ header
 /** COLUMNS **/
 /** -------------------------------------------------- **/
 /** SCALING **/
+.disapear
+    display: none
+
 @media screen and (max-width: 834px)
     .m-disapear
         display: none
+    .m-appear
+        display: block
     .m-pushNone
         margin-left: 0
     .m-heightAuto
@@ -302,6 +307,44 @@ header
     .s-flexReverse
         flex-direction: column-reverse
 /** SCALING **/
+/** -------------------------------------------------- **/
+/** BURGER **/    
+.burger
+    position: absolute
+    top: 50%
+    right: 9.3%
+    transform: translateY(-50%)
+/** BURGER **/
+/** -------------------------------------------------- **/
+/** SIDE NAV **/
+.sideNav
+    position: fixed
+    top: 0
+    transform: translateX(-100%)
+
+    z-index: 101
+
+    max-width: 375px
+    width: 100%
+    height: 100vh
+
+    transition: 500ms
+    .sideNavHeader
+        height: 60px
+        position: relative
+    a
+        font-size: 30px
+        text-decoration: none
+        font-weight: bold
+    p
+        margin-bottom: 1em
+.sideNav.on
+    transform: translateX(0%)
+
+@media screen and (min-width: 834px)
+    .sideNav.on
+        transform: translateX(-100%)
+/** SIDE NAV **/
 /** -------------------------------------------------- **/
 /** Responsible for this code **/
 /** - Niclas V Nielsen **/
