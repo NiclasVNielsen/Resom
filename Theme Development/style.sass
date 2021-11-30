@@ -53,6 +53,20 @@ a
 .centerTitle
     h1,h2,h3,h4,h5,h6
         text-align: center
+
+@media screen and (max-width: 834px)
+    h1, h2
+        font-size: 42px
+    h1,h2,h3,h4,h5,h6
+        text-align: center
+    .m-center
+        text-align: center
+    .m-box-center
+        margin-left: auto
+        margin-right: auto
+    .m-p-size
+        font-size: 22px
+
 /** FONTS **/
 /** -------------------------------------------------- **/
 /** COLOR LAYOUTS **/
@@ -67,6 +81,13 @@ a
 .cyanTheme
     color: $fourth
     background: $prime
+    
+@media screen and (max-width: 375px)
+    .s-whiteTheme
+        color: $third
+        background: $fourth
+        h1,h2
+            color: $prime
 /** COLOR LAYOUTS **/
 /** -------------------------------------------------- **/
 /** CALL TO ACTION **/
@@ -78,6 +99,7 @@ a
     display: flex
     justify-content: center
     align-items: center
+    text-decoration: none
     &:hover
         
     &:active
@@ -112,6 +134,14 @@ header
         a
             text-decoration: none
             display: block
+    
+@media screen and (max-width: 834px)
+    header
+        height: 60px
+        .logo img
+            width: auto
+            height: 42px
+            margin: 0 auto
 
 /** HEADER **/
 /** -------------------------------------------------- **/
@@ -179,6 +209,15 @@ header
     padding-left: .41666%
 .gutterRight, .gutterBoth
     padding-right: .41666%
+@media screen and (max-width: 834px)
+    .gutterLeft, .gutterBoth
+        padding-left: 9.3%
+    .gutterRight, .gutterBoth
+        padding-right: 9.3%
+    .m-gutterLeft, .m-gutterBoth
+        padding-left: 9.3%
+    .m-gutterRight, .m-gutterBoth
+        padding-right: 9.3%
 
 .imageContainer
     min-height: 600px
@@ -205,13 +244,18 @@ header
     padding-top: 86px
 .bigSpace
     padding-top: 94px
+    
+@media screen and (max-width: 834px)
+    .m-space
+        padding-top: 39px
 /** SPACING **/
 /** -------------------------------------------------- **/
 /** COLUMNS **/
 @for $i from 1 through 12
   .col#{$i}
     width: calc((100% / 12) * #{$i})
-    padding: 0 .41666%
+    padding-left: .41666% !important
+    padding-right: .41666% !important
 @for $i from 1 through 12
   .push#{$i}
     margin-left: calc((100% / 12) * #{$i})
@@ -219,29 +263,44 @@ header
 @media screen and (max-width: 834px)
     @for $i from 1 through 8
         .m-col#{$i}
-            width: calc((100% / 8) * #{$i})
-            padding: 0 .41666%
+            width: calc((100% / 8) * #{$i}) !important
+            padding-left: .41666% !important
+            padding-right: .41666% !important
     @for $i from 1 through 8
         .m-push#{$i}
-            margin-left: calc((100% / 8) * #{$i})    
+            margin-left: calc((100% / 8) * #{$i}) !important
 
 
 @media screen and (max-width: 375px)
     @for $i from 1 through 4
         .s-col#{$i}
-            width: calc((100% / 4) * #{$i})
-            padding: 0 .41666%
+            width: calc((100% / 4) * #{$i}) !important
+            padding-left: .41666% !important
+            padding-right: .41666% !important
     @for $i from 1 through 4
         .s-push#{$i}
-            margin-left: calc((100% / 4) * #{$i})   
+            margin-left: calc((100% / 4) * #{$i}) !important
 
 /** COLUMNS **/
 /** -------------------------------------------------- **/
 /** SCALING **/
-
 @media screen and (max-width: 834px)
     .m-disapear
         display: none
+    .m-pushNone
+        margin-left: 0
+    .m-heightAuto
+        height: auto
+        
+@media screen and (max-width: 375px)
+    .s-disapear
+        display: none
+    .s-appear
+        display: block
+    .s-pushNone
+        margin-left: 0
+    .s-flexReverse
+        flex-direction: column-reverse
 /** SCALING **/
 /** -------------------------------------------------- **/
 /** Responsible for this code **/
