@@ -66,11 +66,26 @@
 <section class="containerAlignCenter whiteTheme centerTitle gutterRight bodyText wrapper bigSpace m-gutterBoth zigZagPattern">
     <div class="col7 imageContainer m-col8">
         <div class="PH">
-
+            <img src="<?php the_field("billede1"); ?>" alt="">
         </div>
     </div>
     <div class="col5 m-col8 m-space">
         <?php the_field("om_uddannelsen")?>
+    </div>
+</section>
+<section class="containerAlignCenter whiteTheme centerTitle gutterRight bodyText wrapper bigSpace m-gutterBoth zigZagPattern">
+    <div class="col7 imageContainer m-col8">
+        <div class="PH">
+            <img src="<?php the_field("billede2"); ?>" alt="">
+        </div>
+    </div>
+    <div class="col5 m-col8 m-space">
+        <?php the_field("er_det_gratis")?>
+    </div>
+</section>
+<section class="gutterBoth grayTheme infoBox">
+    <div class="m-space wrapper">
+        <?php the_field("cbit")?>
     </div>
 </section>
     

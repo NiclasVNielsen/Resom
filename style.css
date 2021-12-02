@@ -144,8 +144,6 @@ a {
 
 .CTASmall a, .CTABig a {
   text-decoration: none;
-  -webkit-transform: translateY(-5%);
-          transform: translateY(-5%);
 }
 
 .CTASmall {
@@ -153,9 +151,24 @@ a {
   height: 48px;
 }
 
+.CTASmall a {
+  -webkit-transform: translateY(-25%);
+          transform: translateY(-25%);
+}
+
+.CTASmall.whiteTheme {
+  color: #405D64;
+  background: #FFFFFF;
+}
+
 .CTABig {
   width: 218px;
   height: 71px;
+}
+
+.CTABig a {
+  -webkit-transform: translateY(-5%);
+          transform: translateY(-5%);
 }
 
 /** CALL TO ACTION **/
@@ -285,46 +298,104 @@ footer a {
 /** -------------------------------------------------- **/
 /** PRODUCT BOX **/
 .productBox {
-  padding: 62px  51px 44px 63px;
+  position: relative;
+  padding: 62px  51px 88px 63px;
+  max-width: 498px;
+  width: 100%;
+}
+
+.productBox .info {
+  position: absolute;
+  bottom: 42px;
+  width: 80%;
+}
+
+.productBox .info > p {
+  font-size: 20px;
+}
+
+.productBox .info .containerJustifySpaceBetween {
+  margin-top: 26px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .productBox > p {
-  font-size: 25px;
+  font-size: 20px;
 }
 
-.productBox li > p {
+.productBox li {
+  margin-left: 25px;
+  padding-left: 11px;
   font-size: 20px;
+  font-family: noto-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .productBox .container {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: space-between;
+      -ms-flex-align: space-between;
+          align-items: space-between;
+}
+
+@media screen and (max-width: 1100px) {
+  .productBox:last-of-type {
+    margin-top: 23px;
+  }
+  .productBox .info {
+    position: static;
+    width: 100%;
+  }
+  .productBox .info .containerJustifySpaceBetween {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 /** PRODUCT BOX **/
 /** -------------------------------------------------- **/
 /** INFO BOX **/
 .infoBox {
+  margin-top: 84px;
   padding: 29px 0 81px;
 }
 
 /** INFO BOX **/
 /** -------------------------------------------------- **/
-/** PLACEHOLDERS **/
+/** IMAGES **/
 .PH {
   background: #D1D1D1;
   height: 100%;
 }
 
-.imageContainer .PH {
+.imageContainer > div {
+  height: 100%;
   min-height: 600px;
+  position: relative;
+  overflow: hidden;
 }
 
-/** PlACEHOLDERS **/
+.imageContainer > div > img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: auto;
+  height: 100%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+/** IMAGES **/
 /** -------------------------------------------------- **/
 /** CONTAINERS **/
 .container, .containerAlignCenter, .containerJustifySpaceAround, .containerJustifySpaceBetween {
@@ -362,16 +433,16 @@ footer a {
 
 @media screen and (max-width: 834px) {
   .gutterLeft, .gutterBoth {
-    padding-left: 9.3%;
+    padding-left: 9.3% !important;
   }
   .gutterRight, .gutterBoth {
-    padding-right: 9.3%;
+    padding-right: 9.3% !important;
   }
   .m-gutterLeft, .m-gutterBoth {
-    padding-left: 9.3%;
+    padding-left: 9.3% !important;
   }
   .m-gutterRight, .m-gutterBoth {
-    padding-right: 9.3%;
+    padding-right: 9.3% !important;
   }
 }
 
@@ -379,7 +450,7 @@ footer a {
   min-height: 600px;
 }
 
-.wrapper, .woocommerce, .product {
+.wrapper, .woocommerce {
   max-width: 1580px;
   margin-left: auto;
   margin-right: auto;
@@ -423,6 +494,10 @@ footer a {
 /** CONTAINERS **/
 /** -------------------------------------------------- **/
 /** SPACING **/
+.smallLittleSpace {
+  padding-top: 23px;
+}
+
 .littleSpace {
   padding-top: 43px;
 }
@@ -567,43 +642,43 @@ footer a {
 @media screen and (max-width: 834px) {
   .m-col1 {
     width: calc((100% / 8) * 1) !important;
-    padding-left: .41666% !important;
-    padding-right: .41666% !important;
+    padding-left: .41666%;
+    padding-right: .41666%;
   }
   .m-col2 {
     width: calc((100% / 8) * 2) !important;
-    padding-left: .41666% !important;
-    padding-right: .41666% !important;
+    padding-left: .41666%;
+    padding-right: .41666%;
   }
   .m-col3 {
     width: calc((100% / 8) * 3) !important;
-    padding-left: .41666% !important;
-    padding-right: .41666% !important;
+    padding-left: .41666%;
+    padding-right: .41666%;
   }
   .m-col4 {
     width: calc((100% / 8) * 4) !important;
-    padding-left: .41666% !important;
-    padding-right: .41666% !important;
+    padding-left: .41666%;
+    padding-right: .41666%;
   }
   .m-col5 {
     width: calc((100% / 8) * 5) !important;
-    padding-left: .41666% !important;
-    padding-right: .41666% !important;
+    padding-left: .41666%;
+    padding-right: .41666%;
   }
   .m-col6 {
     width: calc((100% / 8) * 6) !important;
-    padding-left: .41666% !important;
-    padding-right: .41666% !important;
+    padding-left: .41666%;
+    padding-right: .41666%;
   }
   .m-col7 {
     width: calc((100% / 8) * 7) !important;
-    padding-left: .41666% !important;
-    padding-right: .41666% !important;
+    padding-left: .41666%;
+    padding-right: .41666%;
   }
   .m-col8 {
     width: calc((100% / 8) * 8) !important;
-    padding-left: .41666% !important;
-    padding-right: .41666% !important;
+    padding-left: .41666%;
+    padding-right: .41666%;
   }
   .m-push1 {
     margin-left: calc((100% / 8) * 1) !important;

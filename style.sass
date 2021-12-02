@@ -113,13 +113,19 @@ a
     &:active
     a
         text-decoration: none
-        transform: translateY(-5%)
 .CTASmall
     width: 147px
     height: 48px
+    a
+        transform: translateY(-25%)
+.CTASmall.whiteTheme
+    color: $third
+    background: $fourth
 .CTABig
     width: 218px
     height: 71px
+    a
+        transform: translateY(-5%)
         
 /** CALL TO ACTION **/
 /** -------------------------------------------------- **/
@@ -208,30 +214,67 @@ footer
 /** -------------------------------------------------- **/
 /** PRODUCT BOX **/
 .productBox
-    padding: 62px  51px 44px 63px
-    > p
-        font-size: 25px
-    li
+    position: relative
+    padding: 62px  51px 88px 63px
+    max-width: 498px
+    width: 100%
+    .info
+        position: absolute
+        bottom: 42px
+        width: 80%
         > p
             font-size: 20px
+        .containerJustifySpaceBetween
+            margin-top: 26px
+            align-items: center
+    > p
+        font-size: 20px
+    li
+        margin-left: 25px
+        padding-left: 11px
+        font-size: 20px
+        font-family: noto-sans, sans-serif
+        font-weight: 400
+        font-style: normal
     .container
         justify-content: space-between
-        align-items: center
+        align-items: space-between
+@media screen and (max-width: 1100px)
+    .productBox
+        &:last-of-type
+            margin-top: 23px
+        .info
+            position: static
+            width: 100%
+            .containerJustifySpaceBetween
+                flex-direction: column
+                align-items: center
 /** PRODUCT BOX **/
 /** -------------------------------------------------- **/
 /** INFO BOX **/
 .infoBox
+    margin-top: 84px
     padding: 29px 0 81px
 /** INFO BOX **/
 /** -------------------------------------------------- **/
-/** PLACEHOLDERS **/
+/** IMAGES **/
 .PH
     background: #D1D1D1
     height: 100%
 .imageContainer
-    .PH
+    >div
+        height: 100%
         min-height: 600px
-/** PlACEHOLDERS **/
+        position: relative
+        overflow: hidden
+        >img
+            position: absolute
+            top: 0
+            left: 50%
+            width: auto
+            height: 100%
+            transform: translateX(-50%)
+/** IMAGES **/
 /** -------------------------------------------------- **/
 /** CONTAINERS **/
 .container, .containerAlignCenter, .containerJustifySpaceAround, .containerJustifySpaceBetween
@@ -251,13 +294,13 @@ footer
     padding-right: .41666%
 @media screen and (max-width: 834px)
     .gutterLeft, .gutterBoth
-        padding-left: 9.3%
+        padding-left: 9.3% !important
     .gutterRight, .gutterBoth
-        padding-right: 9.3%
+        padding-right: 9.3% !important
     .m-gutterLeft, .m-gutterBoth
-        padding-left: 9.3%
+        padding-left: 9.3% !important
     .m-gutterRight, .m-gutterBoth
-        padding-right: 9.3%
+        padding-right: 9.3% !important
 
 .imageContainer
     min-height: 600px
@@ -288,6 +331,8 @@ footer
 /** CONTAINERS **/
 /** -------------------------------------------------- **/
 /** SPACING **/
+.smallLittleSpace
+    padding-top: 23px
 .littleSpace
     padding-top: 43px
 .mediumSpace
@@ -314,8 +359,8 @@ footer
     @for $i from 1 through 8
         .m-col#{$i}
             width: calc((100% / 8) * #{$i}) !important
-            padding-left: .41666% !important
-            padding-right: .41666% !important
+            padding-left: .41666%
+            padding-right: .41666%
     @for $i from 1 through 8
         .m-push#{$i}
             margin-left: calc((100% / 8) * #{$i}) !important
