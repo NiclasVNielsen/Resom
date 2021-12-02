@@ -1,3 +1,8 @@
+/** Theme Resom **/
+/** Author: Room 6 **/
+/** Description: Custom theme for Resom **/
+/** Version: 1.0 **/
+/** -------------------------------------------------- **/
 /** Search tags **/
 /** QUESTION - | For Questions        **/
 /** TODO -     | For To Do's          **/
@@ -103,6 +108,11 @@ a {
   background: #96B3BA;
 }
 
+.darkCyanTheme {
+  color: #FFFFFF;
+  background: #405D64;
+}
+
 @media screen and (max-width: 375px) {
   .s-whiteTheme {
     color: #405D64;
@@ -175,9 +185,27 @@ header nav {
   width: 50%;
 }
 
+header nav > div {
+  width: 100%;
+}
+
 header nav a {
   text-decoration: none;
   display: block;
+}
+
+#menu-menu {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#menu-menu li {
+  list-style: none;
 }
 
 @media screen and (max-width: 834px) {
@@ -192,6 +220,41 @@ header nav a {
 }
 
 /** HEADER **/
+/** -------------------------------------------------- **/
+/** FOOTER **/
+footer {
+  margin-top: 252px;
+  padding: 58px 102px 15px;
+}
+
+footer li {
+  list-style: none;
+}
+
+footer ul {
+  margin-bottom: 60px;
+}
+
+footer h6 {
+  font-size: 22px;
+  margin-bottom: 9px;
+}
+
+footer a {
+  font-size: 22px;
+  text-decoration: none;
+  font-family: noto-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@media screen and (max-width: 834px) {
+  footer li {
+    text-align: center;
+  }
+}
+
+/** FOOTER **/
 /** -------------------------------------------------- **/
 /** BANNERS **/
 .banner {
@@ -316,7 +379,7 @@ header nav a {
   min-height: 600px;
 }
 
-.wrapper {
+.wrapper, .woocommerce, .product {
   max-width: 1580px;
   margin-left: auto;
   margin-right: auto;
@@ -348,6 +411,13 @@ header nav a {
   .hero {
     min-height: none;
   }
+}
+
+.zigZagPattern:nth-of-type(even) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
 /** CONTAINERS **/
@@ -692,7 +762,39 @@ header nav a {
 
 /** SIDE NAV **/
 /** -------------------------------------------------- **/
-/** Responsible for this code **/
-/** - Niclas V Nielsen **/
-/** https://www.linkedin.com/in/niclas-nielsen-14a173206/ **/
+/** CUSTOM **/
+.nurseIllustration, .phoneIllustration, .piggyIllustration, .bankIllustration {
+  display: block;
+}
+
+.nurseIllustration {
+  width: 76.263990%;
+  margin-left: 6.625498%;
+  height: 112.50232%;
+  margin-top: -5.585903%;
+}
+
+.phoneIllustration {
+  width: 75.395600%;
+  margin-left: 12.286118%;
+  height: 77.705672%;
+  margin-top: 11.130734%;
+}
+
+.piggyIllustration {
+  width: 75.093271%;
+  margin-left: 12.446931%;
+  height: 110.091592%;
+  margin-top: -13.636176%;
+}
+
+.bankIllustration {
+  width: 86.613919%;
+  margin-left: 6.786311%;
+  height: 117.636669%;
+  margin-top: -7.762763%;
+}
+
+/** CUSTOM **/
+/** -------------------------------------------------- **/
 /*# sourceMappingURL=style.css.map */

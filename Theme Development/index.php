@@ -14,11 +14,11 @@
             <img src="./assets/logo.svg" alt="Resom Logo">
         </div>
         <nav class="containerJustifySpaceBetween m-disapear">
-            <a href="">Nav 1</a>
-            <a href="">Nav 2</a>
-            <a href="">Nav 3</a>
-            <a href="">Nav 4</a>
-            <a href="">Nav 5</a>
+            <a href="">Kurser</a>
+            <a href="">Læringsfilm</a>
+            <a href="">Finansiering</a>
+            <a href="">Jobbank</a>
+            <a href="">Bliv Model</a>
         </nav>
         <div class="login CTASmall m-disapear">
             <a href="">Login</a>
@@ -52,8 +52,8 @@
         </nav>
     </aside>
     <section class="cyanTheme s-whiteTheme m-gutterBoth">
-        <div class="wrapper containerAlignCenter hero m-heightAuto s-flexReverse">
-            <div class="col6 m-col8">
+        <div class="wrapper containerAlignCenter m-heightAuto s-flexReverse">
+            <div class="col6 m-col8 hero">
                 <h1>
                     Bliv kosmetisk sygeplejerske
                 </h1>

@@ -1,3 +1,8 @@
+/** Theme Resom **/
+/** Author: Room 6 **/
+/** Description: Custom theme for Resom **/
+/** Version: 1.0 **/
+/** -------------------------------------------------- **/
 /** Search tags **/
 /** QUESTION - | For Questions        **/
 /** TODO -     | For To Do's          **/
@@ -81,6 +86,9 @@ a
 .cyanTheme
     color: $fourth
     background: $prime
+.darkCyanTheme
+    color: $fourth
+    background: $third
     
 @media screen and (max-width: 375px)
     .s-whiteTheme
@@ -131,9 +139,18 @@ header
             display: block
     nav
         width: 50%
+        > div
+            width: 100%
         a
             text-decoration: none
             display: block
+
+#menu-menu
+    width: 100%
+    display: flex
+    justify-content: space-between
+    li
+        list-style: none
     
 @media screen and (max-width: 834px)
     header
@@ -144,6 +161,29 @@ header
             margin: 0 auto
 
 /** HEADER **/
+/** -------------------------------------------------- **/
+/** FOOTER **/
+footer
+    margin-top: 252px
+    padding: 58px 102px 15px
+    li
+        list-style: none
+    ul
+        margin-bottom: 60px
+    h6
+        font-size: 22px
+        margin-bottom: 9px
+    a
+        font-size: 22px
+        text-decoration: none
+        font-family: noto-sans, sans-serif
+        font-weight: 400
+        font-style: normal
+@media screen and (max-width: 834px)
+    footer
+        li
+            text-align: center
+/** FOOTER **/
 /** -------------------------------------------------- **/
 /** BANNERS **/
 .banner
@@ -222,19 +262,29 @@ header
 .imageContainer
     min-height: 600px
 
-.wrapper
+.wrapper, .woocommerce
     max-width: 1580px
     margin-left: auto
     margin-right: auto
 
 .hero
-    min-height: 40em
-    height: 90vh
+    min-height: 90vh
+    display: flex
+    flex-direction: column
+    justify-content: center
     h1
         margin-bottom: 30px
     p
         margin-bottom: 80px
 
+@media screen and (max-width: 375px)
+    .hero
+        min-height: none
+
+.zigZagPattern
+    &:nth-of-type(even)
+        flex-direction: row-reverse
+        
 /** CONTAINERS **/
 /** -------------------------------------------------- **/
 /** SPACING **/
@@ -346,6 +396,33 @@ header
         transform: translateX(-100%)
 /** SIDE NAV **/
 /** -------------------------------------------------- **/
-/** Responsible for this code **/
-/** - Niclas V Nielsen **/
-/** https://www.linkedin.com/in/niclas-nielsen-14a173206/ **/
+/** CUSTOM **/
+.nurseIllustration, .phoneIllustration, .piggyIllustration, .bankIllustration
+    display: block
+
+.nurseIllustration
+    width: 76.263990%
+    margin-left:  6.625498%
+
+    height: 112.50232%
+    margin-top: -5.585903%
+.phoneIllustration
+    width: 75.395600%
+    margin-left: 12.286118%
+
+    height: 77.705672%
+    margin-top: 11.130734%
+.piggyIllustration
+    width: 75.093271%
+    margin-left: 12.446931%
+
+    height: 110.091592%
+    margin-top: -13.636176%
+.bankIllustration
+    width: 86.613919%
+    margin-left:  6.786311%
+    
+    height: 117.636669%
+    margin-top: -7.762763%
+/** CUSTOM **/
+/** -------------------------------------------------- **/
