@@ -65,7 +65,7 @@
 <!-- Gutter needs ajusting to work probably -->
 <section class="containerAlignCenter whiteTheme centerTitle gutterRight bodyText wrapper bigSpace m-gutterBoth zigZagPattern">
     <div class="col7 imageContainer m-col8">
-        <div class="PH">
+        <div>
             <img src="<?php the_field("billede1"); ?>" alt="">
         </div>
     </div>

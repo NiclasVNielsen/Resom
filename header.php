@@ -21,7 +21,7 @@
             ?>
         </nav>
         <div class="login CTASmall m-disapear">
-            <a href="/min-konto">Min Konto</a>
+            <a class="idkAnymore" href="/min-konto">Min Konto</a>
         </div>
         <div class="burger disapear m-appear">
             <img src="<?php echo get_bloginfo('template_url') ?>/assets/menu.png" alt="Menu">

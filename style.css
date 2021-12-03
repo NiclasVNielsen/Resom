@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /** Theme Resom **/
 /** Author: Room 6 **/
 /** Description: Custom theme for Resom **/
@@ -154,6 +155,11 @@ a {
 .CTASmall a {
   -webkit-transform: translateY(-25%);
           transform: translateY(-25%);
+}
+
+.CTASmall .idkAnymore {
+  -webkit-transform: translateY(-5%);
+          transform: translateY(-5%);
 }
 
 .CTASmall.whiteTheme {
@@ -326,8 +332,12 @@ footer a {
 }
 
 .productBox li {
+  list-style-type: '✔';
+  -webkit-padding-start: 1ch;
+          padding-inline-start: 1ch;
   margin-left: 25px;
   padding-left: 11px;
+  margin-bottom: .5em;
   font-size: 20px;
   font-family: noto-sans, sans-serif;
   font-weight: 400;
