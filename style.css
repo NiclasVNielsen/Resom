@@ -30,13 +30,14 @@
 img {
   width: 100%;
   height: auto;
+  display: block;
 }
 
 /** DEFAULT SETTINGS **/
 /** -------------------------------------------------- **/
 /** FONTS **/
 p {
-  font-size: 22px;
+  font-size: 18px;
   font-family: noto-sans, sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -61,7 +62,7 @@ h3 {
 }
 
 a {
-  font-size: 22px;
+  font-size: 18px;
 }
 
 .centerTitle h1, .centerTitle h2, .centerTitle h3, .centerTitle h4, .centerTitle h5, .centerTitle h6 {
@@ -143,6 +144,18 @@ a {
   text-decoration: none;
 }
 
+.CTASmall:hover, .CTABig:hover {
+  background: #96B3BA;
+  color: #405D64;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.CTASmall:active, .CTABig:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .CTASmall a, .CTABig a {
   text-decoration: none;
 }
@@ -165,6 +178,18 @@ a {
 .CTASmall.whiteTheme {
   color: #405D64;
   background: #FFFFFF;
+}
+
+.CTASmall.whiteTheme:hover {
+  background: #96B3BA;
+  color: #405D64;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.CTASmall.whiteTheme:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .CTABig {
@@ -211,6 +236,7 @@ header nav > div {
 header nav a {
   text-decoration: none;
   display: block;
+  font-size: 22px;
 }
 
 #menu-menu {
@@ -278,6 +304,10 @@ footer a {
 /** BANNERS **/
 .banner {
   margin-top: 56px;
+}
+
+.banner a {
+  text-decoration: none;
 }
 
 .banner div {
@@ -384,13 +414,12 @@ footer a {
 /** -------------------------------------------------- **/
 /** IMAGES **/
 .PH {
-  background: #D1D1D1;
   height: 100%;
 }
 
 .imageContainer > div {
   height: 100%;
-  min-height: 600px;
+  min-height: 500px;
   position: relative;
   overflow: hidden;
 }
@@ -457,7 +486,7 @@ footer a {
 }
 
 .imageContainer {
-  min-height: 600px;
+  min-height: 500px;
 }
 
 .wrapper, .woocommerce {
@@ -499,6 +528,33 @@ footer a {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+}
+
+.pageHeading {
+  /** cyanTheme **/
+}
+
+.pageHeading div {
+  /** wrapper **/
+}
+
+.pageHeading div h1 {
+  margin-top: 175px;
+  margin-bottom: 63px;
+  /** Col8 push1 **/
+}
+
+.pageHeading div figure {
+  /** Col2 push1 **/
+  position: relative;
+}
+
+.pageHeading div figure img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
 }
 
 /** CONTAINERS **/

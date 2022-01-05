@@ -6,7 +6,7 @@
     <div class="wrapper containerAlignCenter m-heightAuto s-flexReverse">
         <div class="col6 m-col8 hero">
             <?php the_field("bliv_kosmetisk_sygeplejerske")?>
-            <a href="" class="CTABig m-box-center">
+            <a href="/wordpress/kurser" class="CTABig m-box-center">
                 Tilmeld
             </a>
         </div>

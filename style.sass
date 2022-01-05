@@ -35,11 +35,12 @@ $accent: #D1B66F
 img
     width: 100%
     height: auto
+    display: block
 /** DEFAULT SETTINGS **/
 /** -------------------------------------------------- **/
 /** FONTS **/
 p
-    font-size: 22px
+    font-size: 18px
     font-family: noto-sans, sans-serif
     font-weight: 400
     font-style: normal
@@ -54,7 +55,7 @@ h2
 h3
     font-size: 42px
 a
-    font-size: 22px
+    font-size: 18px
 .centerTitle
     h1,h2,h3,h4,h5,h6
         text-align: center
@@ -109,8 +110,11 @@ a
     align-items: center
     text-decoration: none
     &:hover
-        
+        background: $prime
+        color: $third
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1)
     &:active
+        box-shadow: none
     a
         text-decoration: none
 .CTASmall
@@ -123,6 +127,12 @@ a
 .CTASmall.whiteTheme
     color: $third
     background: $fourth
+    &:hover
+        background: $prime
+        color: $third
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1)
+    &:active
+        box-shadow: none
 .CTABig
     width: 218px
     height: 71px
@@ -152,6 +162,7 @@ header
         a
             text-decoration: none
             display: block
+            font-size: 22px
 
 #menu-menu
     width: 100%
@@ -196,6 +207,9 @@ footer
 /** BANNERS **/
 .banner
     margin-top: 56px
+    a
+        text-decoration: none
+    
     div
         /** QUESTION - This supposed to break the color scheme? **/
         background: #F4F4F4
@@ -264,12 +278,11 @@ footer
 /** -------------------------------------------------- **/
 /** IMAGES **/
 .PH
-    background: #D1D1D1
     height: 100%
 .imageContainer
     >div
         height: 100%
-        min-height: 600px
+        min-height: 500px
         position: relative
         overflow: hidden
         >img
@@ -308,7 +321,7 @@ footer
         padding-right: 9.3% !important
 
 .imageContainer
-    min-height: 600px
+    min-height: 500px
 
 .wrapper, .woocommerce
     max-width: 1580px
@@ -332,6 +345,24 @@ footer
 .zigZagPattern
     &:nth-of-type(even)
         flex-direction: row-reverse
+
+.pageHeading
+    /** cyanTheme **/
+    div
+        /** wrapper **/
+        h1
+            margin-top: 175px
+            margin-bottom: 63px
+            /** Col8 push1 **/
+        figure
+            /** Col2 push1 **/
+            position: relative
+            img
+                position: absolute
+                bottom: 0
+                left: 0
+                width: 100%
+                height: auto
         
 /** CONTAINERS **/
 /** -------------------------------------------------- **/

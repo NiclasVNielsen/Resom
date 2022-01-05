@@ -1,7 +1,16 @@
 <?php 
     get_header();
 ?>
-
+<div class="pageHeading cyanTheme">
+    <div class="wrapper">
+        <h1 class="col8 push1">
+            Kurser
+        </h1>
+        <figure class="col2 push1">
+            <img src="./assets/nurse.png">
+        </figure>
+    </div>
+</div>
 <section class="containerAlignCenter whiteTheme centerTitle gutterRight bodyText wrapper bigSpace m-gutterBoth zigZagPattern">
     <div class="col7 imageContainer m-col8">
         <div>
