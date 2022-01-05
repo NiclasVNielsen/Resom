@@ -142,11 +142,12 @@ a {
       -ms-flex-align: center;
           align-items: center;
   text-decoration: none;
+  -webkit-transition: 100ms;
+  transition: 100ms;
 }
 
 .CTASmall:hover, .CTABig:hover {
-  background: #96B3BA;
-  color: #405D64;
+  background: #D1B66F;
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
           box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
@@ -181,8 +182,7 @@ a {
 }
 
 .CTASmall.whiteTheme:hover {
-  background: #96B3BA;
-  color: #405D64;
+  color: #D1B66F;
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
           box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
@@ -207,14 +207,19 @@ a {
 /** HEADER **/
 header {
   padding: 9px 67px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   left: 0;
   z-index: 100;
+}
+
+header section {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1650px;
+  margin: 0 auto;
 }
 
 header .logo {
@@ -270,6 +275,11 @@ header nav a {
 footer {
   margin-top: 252px;
   padding: 58px 102px 15px;
+}
+
+footer section {
+  max-width: 1650px;
+  margin: 0 auto;
 }
 
 footer li {
@@ -490,7 +500,7 @@ footer a {
 }
 
 .wrapper, .woocommerce {
-  max-width: 1580px;
+  max-width: 1380px;
   margin-left: auto;
   margin-right: auto;
 }

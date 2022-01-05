@@ -109,9 +109,9 @@ a
     justify-content: center
     align-items: center
     text-decoration: none
+    transition: 100ms
     &:hover
-        background: $prime
-        color: $third
+        background: $accent
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.1)
     &:active
         box-shadow: none
@@ -128,8 +128,7 @@ a
     color: $third
     background: $fourth
     &:hover
-        background: $prime
-        color: $third
+        color: $accent
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.1)
     &:active
         box-shadow: none
@@ -145,12 +144,15 @@ a
 header
     padding: 9px 67px
 
-    align-items: center
-
     position: sticky
     top: 0
     left: 0
     z-index: 100
+
+    section
+        align-items: center
+        max-width: 1650px
+        margin: 0 auto
     .logo
         width: 167px
         img
@@ -185,6 +187,10 @@ header
 footer
     margin-top: 252px
     padding: 58px 102px 15px
+
+    section
+        max-width: 1650px
+        margin: 0 auto
     li
         list-style: none
     ul
@@ -324,7 +330,7 @@ footer
     min-height: 500px
 
 .wrapper, .woocommerce
-    max-width: 1580px
+    max-width: 1380px
     margin-left: auto
     margin-right: auto
 
