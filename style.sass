@@ -165,6 +165,8 @@ header
             text-decoration: none
             display: block
             font-size: 22px
+            &:hover
+                color: $accent
 
 #menu-menu
     width: 100%
@@ -215,11 +217,15 @@ footer
     margin-top: 56px
     a
         text-decoration: none
+        transition: 100
+        &:hover > div
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2)
     
     div
         /** QUESTION - This supposed to break the color scheme? **/
         background: #F4F4F4
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1)
+        transition: 100
 
         width: calc(100% - 37px)
         aspect-ratio: 311 / 243

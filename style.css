@@ -244,6 +244,10 @@ header nav a {
   font-size: 22px;
 }
 
+header nav a:hover {
+  color: #D1B66F;
+}
+
 #menu-menu {
   width: 100%;
   display: -webkit-box;
@@ -318,6 +322,13 @@ footer a {
 
 .banner a {
   text-decoration: none;
+  -webkit-transition: 100;
+  transition: 100;
+}
+
+.banner a:hover > div {
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .banner div {
@@ -325,6 +336,8 @@ footer a {
   background: #F4F4F4;
   -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
           box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  -webkit-transition: 100;
+  transition: 100;
   width: calc(100% - 37px);
   aspect-ratio: 311 / 243;
   margin: 0 auto;
