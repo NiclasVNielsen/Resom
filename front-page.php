@@ -11,7 +11,7 @@
             </a>
         </div>
         <div class="col5 push1 m-disapear s-appear s-col4 s-pushNone">
-            <img src="<?php echo get_bloginfo('template_url') ?>/assets/circle.png" alt="Circle of despair">
+            <img src="<?php echo get_bloginfo('template_url') ?>/assets/circle.svg" alt="Circle of despair">
         </div>
     </div>
 </section>

@@ -307,6 +307,10 @@ footer a {
   font-style: normal;
 }
 
+footer a:hover {
+  color: #D1B66F;
+}
+
 @media screen and (max-width: 834px) {
   footer li {
     text-align: center;
