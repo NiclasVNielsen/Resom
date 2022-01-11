@@ -942,11 +942,19 @@ footer a:hover {
   margin-top: -5.585903%;
 }
 
+.nurseHeading {
+  margin-bottom: calc(-4.98237007511881% - 1px);
+}
+
 .phoneIllustration {
   width: 75.395600%;
   margin-left: 12.286118%;
   height: 77.705672%;
   margin-top: 11.130734%;
+}
+
+.phoneHeading {
+  margin-bottom: 2.093013520867345%;
 }
 
 .piggyIllustration {
@@ -963,6 +971,69 @@ footer a:hover {
   margin-top: -7.762763%;
 }
 
+.bankHeading {
+  margin-bottom: -2.766014834794336%;
+}
+
+.modelHeading {
+  width: 88% !important;
+}
+
+.undervisereHeading {
+  width: 75% !important;
+}
+
 /** CUSTOM **/
 /** -------------------------------------------------- **/
+/* Style WC Account Endpoint Links */
+nav.woocommerce-MyAccount-navigation ul {
+  list-style-type: none;
+  padding-left: 0;
+  max-width: 200px;
+  font-size: 17px;
+  line-height: 26px;
+}
+
+nav.woocommerce-MyAccount-navigation ul li {
+  padding: 8px 20px;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+nav.woocommerce-MyAccount-navigation ul li.is-active {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+nav.woocommerce-MyAccount-navigation ul li.is-active a {
+  color: rgba(0, 0, 0, 0.8);
+  cursor: default;
+}
+
+nav.woocommerce-MyAccount-navigation ul li.is-active:after {
+  content: "";
+  height: 0;
+  width: 0;
+  border-top: 20px solid transparent;
+  border-left: 14px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 20px solid transparent;
+  float: right;
+  margin-right: -34px;
+  margin-top: -7px;
+}
+
+nav.woocommerce-MyAccount-navigation ul li:not(.is-active):hover {
+  background-color: rgba(0, 0, 0, 0.07);
+}
+
+nav.woocommerce-MyAccount-navigation ul li:not(.is-active):hover:after {
+  content: "";
+  height: 0;
+  width: 0;
+  border-top: 20px solid transparent;
+  border-left: 14px solid rgba(0, 0, 0, 0.07);
+  border-bottom: 20px solid transparent;
+  float: right;
+  margin-right: -34px;
+  margin-top: -7px;
+}
 /*# sourceMappingURL=style.css.map */
