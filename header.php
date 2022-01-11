@@ -9,23 +9,25 @@
 	<?php wp_head(); ?>
 </head>
 <body>
-    <header class="cyanTheme containerJustifySpaceBetween">
-        <div class="logo m-col8">
-            <a href="/">
-                <img src="<?php echo get_bloginfo('template_url') ?>/assets/logo.svg" alt="Resom Logo">
-            </a>
-        </div>
-        <nav class="containerJustifySpaceBetween m-disapear">
-            <?php 
-                wp_nav_menu( array("theme_location" => "main-menu") );
-            ?>
-        </nav>
-        <div class="login CTASmall m-disapear">
-            <a class="idkAnymore" href="/min-konto">Min Konto</a>
-        </div>
-        <div class="burger disapear m-appear">
-            <img src="<?php echo get_bloginfo('template_url') ?>/assets/menu.png" alt="Menu">
-        </div>
+    <header class="cyanTheme">
+      	<section class="containerJustifySpaceBetween">
+            <div class="logo m-col8">
+                <a href="/">
+                    <img src="<?php echo get_bloginfo('template_url') ?>/assets/logo.svg" alt="Resom Logo">
+                </a>
+            </div>
+            <nav class="containerJustifySpaceBetween m-disapear">
+                <?php 
+                    wp_nav_menu( array("theme_location" => "main-menu") );
+                ?>
+            </nav>
+            <div class="login CTASmall m-disapear">
+                <a class="idkAnymore" href="/wordpress/min-konto">Min Konto</a>
+            </div>
+            <div class="burger disapear m-appear">
+                <img src="<?php echo get_bloginfo('template_url') ?>/assets/menu.png" alt="Menu">
+            </div>
+        </section>
     </header>
     <aside class="sideNav cyanTheme">
         <div class="sideNavHeader">

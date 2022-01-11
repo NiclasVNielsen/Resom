@@ -2,13 +2,13 @@
     get_header();
 ?>
 <div class="pageHeading cyanTheme">
-    <div class="wrapper">
+    <div class="wrapper container">
+        <figure class="col2 push1">
+            <img class="nurseHeading" src="<?php echo get_bloginfo('template_url') ?>/assets/nurse.png">
+        </figure>
         <h1 class="col8 push1">
             Kurser
         </h1>
-        <figure class="col2 push1">
-            <img src="./assets/nurse.png">
-        </figure>
     </div>
 </div>
 <section class="containerAlignCenter whiteTheme centerTitle gutterRight bodyText wrapper bigSpace m-gutterBoth zigZagPattern">
@@ -22,7 +22,7 @@
     </div>
 </section> 
 <section class="containerJustifySpaceAround whiteTheme bodyText wrapper bigSpace">
-    <div class="m-space col12">
+    <div id="kurser" class="m-space col12">
         <?php the_field("uddannelsens_opbygning_og_tilmelding")?>
     </div>
     <div class="col12 containerJustifySpaceAround smallLittleSpace">
@@ -39,6 +39,20 @@
         <?php the_field("betaling")?>
     </div>
 </section>
+<section class="containerAlignCenter whiteTheme gutterRight bodyText wrapper bigSpace m-gutterBoth zigZagPattern">
+    <div class="col7 imageContainer m-col8">
+        <div>
+        <img src="<?php the_field("billede2"); ?>" alt="">
+        </div>
+    </div>
+    <div class="col5 m-col8 m-space">
+        <?php the_field("text_box_4")?>
+      
+        <div class="CTASmall" style="margin-top: 2em;">
+            <a class="idkAnymore" href="/undervisere">Underviser</a>
+        </div>
+    </div>
+</section> 
     
 <?php 
     get_footer();
