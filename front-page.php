@@ -6,7 +6,7 @@
     <div class="wrapper containerAlignCenter m-heightAuto s-flexReverse">
         <div class="col6 m-col8 hero">
             <?php the_field("bliv_kosmetisk_sygeplejerske")?>
-            <a href="/wordpress/kurser#kurser" class="CTABig m-box-center">
+            <a href="/wordpress/kurser" class="CTABig m-box-center">
                 Tilmeld
             </a>
         </div>
@@ -15,7 +15,7 @@
         </div>
     </div>
 </section>
-<section class="whiteTheme centerTitle wrapper littleSpace s-disapear">
+<section data-aos="fade-up" class="whiteTheme centerTitle wrapper littleSpace s-disapear">
     <h2>
         Kom godt igang
     </h2>
@@ -63,7 +63,7 @@
     </section>
 </section>
 <!-- Gutter needs ajusting to work probably -->
-<section class="containerAlignCenter whiteTheme centerTitle gutterRight bodyText wrapper bigSpace m-gutterBoth zigZagPattern">
+<section data-aos="fade-right" class="containerAlignCenter whiteTheme centerTitle gutterRight bodyText wrapper bigSpace m-gutterBoth zigZagPattern">
     <div class="col7 imageContainer m-col8">
         <div>
             <img src="<?php the_field("billede1"); ?>" alt="">
@@ -73,7 +73,7 @@
         <?php the_field("om_uddannelsen")?>
     </div>
 </section>
-<section class="containerAlignCenter whiteTheme centerTitle gutterRight bodyText wrapper bigSpace m-gutterBoth zigZagPattern">
+<section data-aos="fade-left" class="containerAlignCenter whiteTheme centerTitle gutterRight bodyText wrapper bigSpace m-gutterBoth zigZagPattern">
     <div class="col7 imageContainer m-col8">
         <div class="PH">
             <img src="<?php the_field("billede2"); ?>" alt="">
@@ -83,19 +83,9 @@
         <?php the_field("er_det_gratis")?>
     </div>
 </section>
-<section class="gutterBoth grayTheme infoBox">
+<section data-aos="fade-up" class="gutterBoth grayTheme infoBox">
     <div class="m-space wrapper">
         <?php the_field("cbit")?>
-    </div>
-</section>
-<section class="containerAlignCenter whiteTheme gutterRight bodyText wrapper bigSpace m-gutterBoth zigZagPattern">
-    <div class="col7 imageContainer m-col8">
-        <div class="PH">
-            <img src="<?php the_field("billede2"); ?>" alt="">
-        </div>
-    </div>
-    <div class="col5 m-col8 m-space">
-        <?php the_field("er_det_gratis")?>
     </div>
 </section>
     
