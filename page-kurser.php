@@ -11,7 +11,7 @@
         </h1>
     </div>
 </div>
-<section class="containerAlignCenter whiteTheme centerTitle gutterRight bodyText wrapper bigSpace m-gutterBoth zigZagPattern">
+<section data-aos="fade-right" class="containerAlignCenter whiteTheme centerTitle gutterRight bodyText wrapper bigSpace m-gutterBoth zigZagPattern">
     <div class="col7 imageContainer m-col8">
         <div>
         <img src="<?php the_field("billede1"); ?>" alt="">
@@ -21,7 +21,7 @@
         <?php the_field("hold_opstart_og_ansogning")?>
     </div>
 </section> 
-<section class="containerJustifySpaceAround whiteTheme bodyText wrapper bigSpace">
+<section data-aos="fade-up" class="containerJustifySpaceAround whiteTheme bodyText wrapper bigSpace">
     <div id="kurser" class="m-space col12">
         <?php the_field("uddannelsens_opbygning_og_tilmelding")?>
     </div>
@@ -34,12 +34,24 @@
         </div>
     </div>
 </section>
-<section class="gutterBoth grayTheme infoBox">
+<section data-aos="fade-up" class="containerAlignCenter whiteTheme gutterBoth wrapper">
+    <div style="margin: 84px auto 0 auto;">
+        <h3 style="text-align: center;">Brug for hjælp til finiansiering?</h3>
+      
+        <p style="text-align: center;">Med vores partnerskab med Sundhed+ kan du betale din uddannelse over 24-60 måneder.</p>
+      
+        <div class="CTASmall" style="margin: 38px auto 0 auto;">
+            <a class="idkAnymore" href="/finiansiering">Finiansiering</a>
+        </div>
+    </div>
+</section>
+<section></section>
+<section data-aos="fade-up" class="gutterBoth grayTheme infoBox">
     <div class="m-space wrapper">
         <?php the_field("betaling")?>
     </div>
 </section>
-<section class="containerAlignCenter whiteTheme gutterRight bodyText wrapper bigSpace m-gutterBoth zigZagPattern">
+<section data-aos="fade-left" class="containerAlignCenter whiteTheme gutterRight bodyText wrapper bigSpace m-gutterBoth zigZagPattern">
     <div class="col7 imageContainer m-col8">
         <div>
         <img src="<?php the_field("billede2"); ?>" alt="">

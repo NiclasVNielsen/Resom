@@ -5,12 +5,12 @@
             </h6>
             <ul>
                 <li>
-                    <a href="">
+                    <a href="https://stps.dk/da/tilsyn/tilsyn-med-sundhedspersoner/tilsyn-med-kosmetisk-behandling/">
                         Lovgivningen om kosmetisk sygeplejerske
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="/ofte-stillede-spoergsmaal">
                         Ofte stillede spørgsmål
                     </a>
                 </li>
@@ -22,7 +22,7 @@
             </h6>
             <ul>
                 <li>
-                    <a href="">
+                    <a href="/undervisere">
                         Mød underviserne
                     </a>
                 </li>
@@ -39,18 +39,19 @@
             </h6>
             <ul>
                 <li>
-                    <a href="">
-                        Strandbygade 75
+                    <a href="https://goo.gl/maps/GPpoBhAYtmo3SRCq5">
+                        Strandbygade 75 <br>
+                        6700 Esbjerg
                     </a>
                 </li>
                 <li>
-                    <a href="">
-                        email
+                    <a href="mailto:info@resom.dk">
+                        info@resom.dk
                     </a>
                 </li>
                 <li>
-                    <a href="">
-                        +45 
+                    <a href="tel:+45xxxxxxxx">
+                        +45 xx xx xx xx
                     </a>
                 </li>
             </ul>
