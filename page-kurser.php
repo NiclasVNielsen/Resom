@@ -41,7 +41,7 @@
         <p style="text-align: center;">Med vores partnerskab med Sundhed+ kan du betale din uddannelse over 24-60 måneder.</p>
       
         <div class="CTASmall" style="margin: 38px auto 0 auto;">
-            <a class="idkAnymore" href="/finiansiering">Finiansiering</a>
+            <a class="idkAnymore" href="/finansiering">Finansiering</a>
         </div>
     </div>
 </section>

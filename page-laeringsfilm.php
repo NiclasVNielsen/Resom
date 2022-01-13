@@ -58,7 +58,7 @@
         <p style="text-align: center;">Læs mere om vores kurser, for at få et dybere indblik i vores undervisning.</p>
       
         <div class="CTASmall" style="margin: 38px auto 0 auto;">
-            <a class="idkAnymore" href="/finiansiering">Kurser</a>
+            <a class="idkAnymore" href="/kurser">Kurser</a>
         </div>
     </div>
 </section> 
