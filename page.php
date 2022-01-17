@@ -16,3 +16,11 @@
 </section>
 
 <?php get_footer(); ?>
+<script>
+    const loginForm = document.querySelector(".woocommerce-form-login");
+    const sideNav = document.querySelector(".wcmamtx_menu_left");
+
+    if(loginForm){
+        sideNav.remove();
+    }
+</script>
