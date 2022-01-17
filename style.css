@@ -1151,6 +1151,15 @@ body > .zigZagPattern:nth-of-type(even) {
   text-decoration: none;
 }
 
+@media only screen and (max-width: 834px) {
+  .woocommerceContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .aiovg-categories {
   width: 100%;
   display: -webkit-box;
