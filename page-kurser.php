@@ -3,15 +3,25 @@
 ?>
 <div class="pageHeading cyanTheme">
     <div class="wrapper container">
-        <figure class="col2 push1">
+        <figure class="col2 push1 m-disapear">
             <img class="nurseHeading" src="<?php echo get_bloginfo('template_url') ?>/assets/nurse.png">
         </figure>
-        <h1 class="col8 push1">
+        <h1 class="col8 push1 m-pushNone">
             Kurser
         </h1>
     </div>
 </div>
 <section data-aos="fade-right" class="containerAlignCenter whiteTheme centerTitle gutterRight bodyText wrapper bigSpace m-gutterBoth zigZagPattern">
+    <div class="col7 imageContainer m-col8">
+        <div>
+        <img src="<?php the_field("billede1"); ?>" alt="">
+        </div>
+    </div>
+    <div class="col5 m-col8 m-space">
+        <?php the_field("hold_opstart_og_ansogning")?>
+    </div>
+</section>
+<section data-aos="fade-left" class="containerAlignCenter whiteTheme centerTitle gutterRight bodyText wrapper bigSpace m-gutterBoth zigZagPattern">
     <div class="col7 imageContainer m-col8">
         <div>
         <img src="<?php the_field("billede1"); ?>" alt="">
