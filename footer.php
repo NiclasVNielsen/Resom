@@ -5,7 +5,7 @@
             </h6>
             <ul>
                 <li>
-                    <a href="https://stps.dk/da/tilsyn/tilsyn-med-sundhedspersoner/tilsyn-med-kosmetisk-behandling/">
+                    <a target="_blanc" href="https://stps.dk/da/tilsyn/tilsyn-med-sundhedspersoner/tilsyn-med-kosmetisk-behandling/">
                         Lovgivningen om kosmetisk sygeplejerske
                     </a>
                 </li>
@@ -57,7 +57,18 @@
             </ul>
         </div>
     </footer>
-    <script src="sideNav.js">
+    <script>
+      const burger = document.querySelectorAll('.burger')
+      const sideNav = document.querySelector('.sideNav')
+
+      const toggle = () => {
+          console.log('me me here')
+          sideNav.classList.toggle('on')
+      }
+
+      burger.forEach((i, index) => {
+          burger[index].addEventListener('click', toggle)
+      })
     </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

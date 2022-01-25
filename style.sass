@@ -372,6 +372,19 @@ footer
 .heroArrow
     clip-path: polygon(0 0, 100% 0, 100% 95%, calc(50% + 50px) 95%, 50% 100%, calc(50% - 50px) 95%, 0 95%)
 
+@media screen and (max-width: 1427px)
+    .heroArrow
+        h1
+            font-size: 42px
+        &.m-gutterBoth
+            padding-left: 9.3% !important
+            padding-right: 9.3% !important
+        > .wrapper
+            .m-col8
+                width: 100%
+            .m-disapear
+                display: none
+
 .circleContainer
     max-width: 500px
     height: 500px
@@ -527,6 +540,7 @@ body > .zigZagPattern:nth-of-type(even)
 @media screen and (min-width: 834px)
     .sideNav.on
         transform: translateX(-100%)
+        
 /** SIDE NAV **/
 /** -------------------------------------------------- **/
 /** ABOUT BOX **/
@@ -719,7 +733,7 @@ body > .zigZagPattern:nth-of-type(even)
 @media only screen and (max-width: 834px)
     .woocommerceContainer
         flex-direction: column
-        
+
 input
     background: #FFF
     color: $third
