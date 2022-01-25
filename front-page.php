@@ -2,7 +2,7 @@
     get_header();
 ?>
             
-<section class="cyanTheme s-whiteTheme m-gutterBoth">
+<section class="cyanTheme heroArrow s-whiteTheme m-gutterBoth">
     <div class="wrapper containerAlignCenter m-heightAuto s-flexReverse">
         <div class="col6 m-col8 hero">
             <?php the_field("bliv_kosmetisk_sygeplejerske")?>
@@ -10,8 +10,13 @@
                 Tilmeld
             </a>
         </div>
-        <div class="col5 push1 m-disapear s-appear s-col4 s-pushNone">
-            <img src="<?php echo get_bloginfo('template_url') ?>/assets/circle.svg" alt="Circle of despair">
+        <div class="col5 push1 m-disapear s-col4 s-pushNone">
+            <div class="circleContainer">
+                <div><a href="/kurser"><img src="<?php echo get_bloginfo('template_url') ?>/assets/circle.svg" alt="Circle of despair"></a></div>
+                <div><a href="/laeringsfilm"><img src="<?php echo get_bloginfo('template_url') ?>/assets/circle.svg" alt="Circle of despair"></a></div>
+                <div><a href="/finansiering"><img src="<?php echo get_bloginfo('template_url') ?>/assets/circle.svg" alt="Circle of despair"></a></div>
+                <div><a href="/job-bank"><img src="<?php echo get_bloginfo('template_url') ?>/assets/circle.svg" alt="Circle of despair"></a></div>
+            </div>
         </div>
     </div>
 </section>

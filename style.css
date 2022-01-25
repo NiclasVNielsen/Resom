@@ -274,6 +274,15 @@ header nav a:hover {
   }
 }
 
+@media screen and (max-width: 1427px) {
+  header .m-disapear {
+    display: none;
+  }
+  header .m-appear {
+    display: block;
+  }
+}
+
 /** HEADER **/
 /** -------------------------------------------------- **/
 /** FOOTER **/
@@ -1006,7 +1015,7 @@ body > .zigZagPattern:nth-of-type(even) {
           transform: translateX(0%);
 }
 
-@media screen and (min-width: 834px) {
+@media screen and (min-width: 1427px) {
   .sideNav.on {
     -webkit-transform: translateX(-100%);
             transform: translateX(-100%);

@@ -30,8 +30,8 @@
     </header>
     <aside class="sideNav cyanTheme">
         <div class="sideNavHeader">
-            <div class="burger">
-                <img src="<?php echo get_bloginfo('template_url') ?>/assets/menu.png" alt="Menu">
+            <div class="burger" style="font-size: 2em">
+                ←
             </div>
         </div>
         <nav class="gutterBoth">
