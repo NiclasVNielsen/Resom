@@ -31,6 +31,7 @@ img {
   width: 100%;
   height: auto;
   display: block;
+  overflow-x: hidden;
 }
 
 /** DEFAULT SETTINGS **/
@@ -41,6 +42,10 @@ p {
   font-family: noto-sans, sans-serif;
   font-weight: 400;
   font-style: normal;
+}
+
+html {
+  overflow-x: hidden;
 }
 
 body {
@@ -74,9 +79,8 @@ a {
   h1, h2 {
     font-size: 42px;
   }
-  h1, h2, h3, h4, h5, h6 {
-    text-align: center;
-  }
+  /** h1,h2,h3,h4,h5,h6
+        text-align: center **/
   .m-center {
     text-align: center;
   }
@@ -101,6 +105,11 @@ a {
   color: #96B3BA;
 }
 
+.whiteTheme input, .whiteTheme textarea {
+  color: #405D64;
+  background: #D0D9DB;
+}
+
 .grayTheme {
   color: #405D64;
   background: #D0D9DB;
@@ -116,7 +125,7 @@ a {
   background: #405D64;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 500px) {
   .s-whiteTheme {
     color: #405D64;
     background: #FFFFFF;
@@ -574,7 +583,7 @@ footer a:hover {
   margin-bottom: 80px;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 500px) {
   .hero {
     min-height: none;
   }
@@ -893,7 +902,7 @@ body > .zigZagPattern:nth-of-type(even) {
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 500px) {
   .s-col1 {
     width: calc((100% / 4) * 1) !important;
     padding-left: .41666% !important;
@@ -950,7 +959,7 @@ body > .zigZagPattern:nth-of-type(even) {
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 500px) {
   .s-disapear {
     display: none;
   }
@@ -988,7 +997,7 @@ body > .zigZagPattern:nth-of-type(even) {
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
   z-index: 101;
-  max-width: 375px;
+  max-width: 500px;
   width: 100%;
   height: 100vh;
   -webkit-transition: 500ms;
@@ -1201,7 +1210,6 @@ body > .zigZagPattern:nth-of-type(even) {
 /* Style WC Account Endpoint Links */
 /*My Styling*/
 .woocommerceContainer {
-  min-height: 90vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1210,23 +1218,22 @@ body > .zigZagPattern:nth-of-type(even) {
 
 .woocommerce-MyAccount-content {
   padding: 1em;
+  color: #FFFFFF;
+  background: #96B3BA;
+  padding: 10px;
+  border-radius: 10px;
 }
 
-.wcmamtx_menu_left {
-  padding: 1em;
-  background: #405D64;
-  overflow: hidden;
-}
-
-.wcmamtx_menu_left ul li {
-  list-style: none;
-  margin-bottom: .8em;
-}
-
-.wcmamtx_menu_left ul li a {
-  text-decoration: none;
-}
-
+/** .wcmamtx_menu_left
+    padding: 1em
+    background: #405D64
+    overflow: hidden
+    ul
+        li
+            list-style: none
+            margin-bottom: .8em
+            a
+                text-decoration: none **/
 .aiovg-categories {
   width: 100%;
   display: -webkit-box;

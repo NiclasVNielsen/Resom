@@ -55,6 +55,104 @@ function x_hide_cart(){
 	}
 }
 
+function pp_recent_orders() {
+    $user_id = get_current_user_id();
+    if ($user_id == 0) {
+         return do_shortcode('[woocommerce_my_account]'); 
+    }
+    else
+    {
+        ob_start();
+        wc_get_template( 'myaccount/my-orders.php', array(
+            'current_user'  => get_user_by( 'id', $user_id),
+            'order_count'   => $order_count
+         ) );
+        return ob_get_clean();
+    }
+
+}
+
+function my_acf_user_form_func( $atts ) {
+ 
+  $a = shortcode_atts( array(
+    'field_group' => ''
+  ), $atts );
+ 
+  $uid = get_current_user_id();
+  
+  
+  
+  
+  
+  if ( ! empty ( $a['field_group'] ) && ! empty ( $uid ) ) {
+    $options = array(
+      'post_id' => 'user_'.$uid,
+      'field_groups' => array( intval( $a['field_group'] ) ),
+      'return' => add_query_arg( 'updated', 'true', get_permalink() )
+    );
+    
+    ob_start();
+    
+    acf_form( $options );
+    $form = ob_get_contents();
+    
+    ob_end_clean();
+  }
+  
+    return $form;
+}
+ 
+add_shortcode( 'my_acf_user_form', 'my_acf_user_form_func' );
+
+function add_acf_form_head(){
+    global $post;
+    
+  if ( !empty($post) && has_shortcode( $post->post_content, 'my_acf_user_form' ) ) {
+        acf_form_head();
+    }
+}
+add_action( 'wp_head', 'add_acf_form_head', 7 );
+
+
+
+
+function themeslug_query_vars_navn( $qvars ) {
+    $qvars[] = 'navn';
+    return $qvars;
+}
+add_filter( 'query_vars', 'themeslug_query_vars_navn' );
+function themeslug_query_vars_by( $qvars ) {
+    $qvars[] = 'by';
+    return $qvars;
+}
+add_filter( 'query_vars', 'themeslug_query_vars_by' );
+
+
+
+
+function user_has_role($user_id, $role_name)
+{
+    $user_meta = get_userdata($user_id);
+    $user_roles = $user_meta->roles;
+  	$hasRole = 0;
+    foreach ($user_roles as $user_role) {
+      	if(ucfirst($user_role) == $role_name){
+        	 $hasRole = 1;
+        }
+    }
+    return $hasRole;
+  	// $test . $hasRole . $user_roles[0] . $role_name;
+}
+
+
+
+
+
+
+
+
+add_shortcode('display_woocommerce_orders', 'pp_recent_orders');
+
 add_filter( 'woocommerce_show_page_title', '__return_false' );
 add_theme_support( 'woocommerce' );
 add_filter( 'woocommerce_subcategory_count_html', '__return_null' );

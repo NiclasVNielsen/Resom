@@ -36,6 +36,7 @@ img
     width: 100%
     height: auto
     display: block
+    overflow-x: hidden
 /** DEFAULT SETTINGS **/
 /** -------------------------------------------------- **/
 /** FONTS **/
@@ -44,6 +45,10 @@ p
     font-family: noto-sans, sans-serif
     font-weight: 400
     font-style: normal
+
+html
+    overflow-x: hidden
+    
 body
     font-family: century-gothic,sans-serif
     font-weight: 700
@@ -64,8 +69,8 @@ a
 @media screen and (max-width: 834px)
     h1, h2
         font-size: 42px
-    h1,h2,h3,h4,h5,h6
-        text-align: center
+    /** h1,h2,h3,h4,h5,h6
+        text-align: center **/
     .m-center
         text-align: center
     .m-box-center
@@ -82,6 +87,9 @@ a
     background: $fourth
     h1,h2
         color: $prime
+    input,textarea
+        color: $third
+        background: $second
 .grayTheme
     color: $third
     background: $second
@@ -92,7 +100,7 @@ a
     color: $fourth
     background: $third
     
-@media screen and (max-width: 375px)
+@media screen and (max-width: 500px)
     .s-whiteTheme
         color: $third
         background: $fourth
@@ -372,7 +380,7 @@ footer
     p
         margin-bottom: 80px
 
-@media screen and (max-width: 375px)
+@media screen and (max-width: 500px)
     .hero
         min-height: none
 
@@ -474,7 +482,7 @@ body > .zigZagPattern:nth-of-type(even)
             margin-left: calc((100% / 8) * #{$i}) !important
 
 
-@media screen and (max-width: 375px)
+@media screen and (max-width: 500px)
     @for $i from 1 through 4
         .s-col#{$i}
             width: calc((100% / 4) * #{$i}) !important
@@ -500,7 +508,7 @@ body > .zigZagPattern:nth-of-type(even)
     .m-heightAuto
         height: auto
         
-@media screen and (max-width: 375px)
+@media screen and (max-width: 500px)
     .s-disapear
         display: none
     .s-appear
@@ -527,7 +535,7 @@ body > .zigZagPattern:nth-of-type(even)
 
     z-index: 101
 
-    max-width: 375px
+    max-width: 500px
     width: 100%
     height: 100vh
 
@@ -694,15 +702,18 @@ body > .zigZagPattern:nth-of-type(even)
 
 /*My Styling*/
 .woocommerceContainer
-    min-height: 90vh
     display: flex
     margin-bottom: -84px
 
 .woocommerce-MyAccount-content
     padding: 1em
+    color: $fourth
+    background: $prime
+    padding: 10px
+    border-radius: 10px
 
 
-.wcmamtx_menu_left
+/** .wcmamtx_menu_left
     padding: 1em
     background: #405D64
     overflow: hidden
@@ -711,7 +722,7 @@ body > .zigZagPattern:nth-of-type(even)
             list-style: none
             margin-bottom: .8em
             a
-                text-decoration: none
+                text-decoration: none **/
 
 .aiovg-categories
     width: 100%
